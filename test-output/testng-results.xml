@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results ignored="0" total="5" passed="5" failed="0" skipped="0">
+  <reporter-output>
+  </reporter-output>
+  <suite started-at="2022-02-24T13:48:45Z" name="WordPress Suite" finished-at="2022-02-24T13:50:28Z" duration-ms="103073">
+    <groups>
+    </groups>
+    <test started-at="2022-02-24T13:48:45Z" name="Word Press Test" finished-at="2022-02-24T13:50:28Z" duration-ms="103073">
+      <class name="test.wordpress.testcases.WordPressMyProfile">
+        <test-method is-config="true" signature="setupSuite()[pri:0, instance:test.wordpress.testcases.WordPressMyProfile@d86a6f]" started-at="2022-02-24T19:18:45Z" name="setupSuite" finished-at="2022-02-24T19:18:45Z" duration-ms="376" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setupSuite -->
+        <test-method is-config="true" signature="setup()[pri:0, instance:test.wordpress.testcases.WordPressMyProfile@d86a6f]" started-at="2022-02-24T19:18:45Z" name="setup" finished-at="2022-02-24T19:18:53Z" duration-ms="7836" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method signature="loginApplication()[pri:0, instance:test.wordpress.testcases.WordPressMyProfile@d86a6f]" started-at="2022-02-24T19:18:53Z" name="loginApplication" finished-at="2022-02-24T19:18:59Z" duration-ms="6062" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- loginApplication -->
+        <test-method is-config="true" signature="tearDownMethod(org.testng.ITestResult)[pri:0, instance:test.wordpress.testcases.WordPressMyProfile@d86a6f]" started-at="2022-02-24T19:18:59Z" name="tearDownMethod" finished-at="2022-02-24T19:18:59Z" duration-ms="172" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=loginApplication status=SUCCESS method=WordPressMyProfile.loginApplication()[pri:0, instance:test.wordpress.testcases.WordPressMyProfile@d86a6f] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDownMethod -->
+        <test-method signature="update_ProfileInfo()[pri:1, instance:test.wordpress.testcases.WordPressMyProfile@d86a6f]" started-at="2022-02-24T19:18:59Z" name="update_ProfileInfo" finished-at="2022-02-24T19:19:05Z" depends-on-methods="test.wordpress.testcases.WordPressMyProfile.loginApplication" duration-ms="5424" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- update_ProfileInfo -->
+        <test-method is-config="true" signature="tearDownMethod(org.testng.ITestResult)[pri:0, instance:test.wordpress.testcases.WordPressMyProfile@d86a6f]" started-at="2022-02-24T19:19:05Z" name="tearDownMethod" finished-at="2022-02-24T19:19:05Z" duration-ms="164" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=update_ProfileInfo status=SUCCESS method=WordPressMyProfile.update_ProfileInfo()[pri:1, instance:test.wordpress.testcases.WordPressMyProfile@d86a6f] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDownMethod -->
+        <test-method signature="update_AboutMe()[pri:2, instance:test.wordpress.testcases.WordPressMyProfile@d86a6f]" started-at="2022-02-24T19:19:05Z" name="update_AboutMe" finished-at="2022-02-24T19:19:10Z" depends-on-methods="test.wordpress.testcases.WordPressMyProfile.loginApplication" duration-ms="5245" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- update_AboutMe -->
+        <test-method is-config="true" signature="tearDownMethod(org.testng.ITestResult)[pri:0, instance:test.wordpress.testcases.WordPressMyProfile@d86a6f]" started-at="2022-02-24T19:19:10Z" name="tearDownMethod" finished-at="2022-02-24T19:19:10Z" duration-ms="173" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=update_AboutMe status=SUCCESS method=WordPressMyProfile.update_AboutMe()[pri:2, instance:test.wordpress.testcases.WordPressMyProfile@d86a6f] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDownMethod -->
+        <test-method signature="additonOfURL()[pri:3, instance:test.wordpress.testcases.WordPressMyProfile@d86a6f]" started-at="2022-02-24T19:19:10Z" name="additonOfURL" finished-at="2022-02-24T19:20:18Z" depends-on-methods="test.wordpress.testcases.WordPressMyProfile.loginApplication" duration-ms="67367" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- additonOfURL -->
+        <test-method is-config="true" signature="tearDownMethod(org.testng.ITestResult)[pri:0, instance:test.wordpress.testcases.WordPressMyProfile@d86a6f]" started-at="2022-02-24T19:20:18Z" name="tearDownMethod" finished-at="2022-02-24T19:20:18Z" duration-ms="159" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=additonOfURL status=SUCCESS method=WordPressMyProfile.additonOfURL()[pri:3, instance:test.wordpress.testcases.WordPressMyProfile@d86a6f] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDownMethod -->
+        <test-method signature="deletionOfURL()[pri:4, instance:test.wordpress.testcases.WordPressMyProfile@d86a6f]" started-at="2022-02-24T19:20:18Z" name="deletionOfURL" finished-at="2022-02-24T19:20:28Z" depends-on-methods="test.wordpress.testcases.WordPressMyProfile.loginApplication" duration-ms="10117" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- deletionOfURL -->
+        <test-method is-config="true" signature="tearDownMethod(org.testng.ITestResult)[pri:0, instance:test.wordpress.testcases.WordPressMyProfile@d86a6f]" started-at="2022-02-24T19:20:28Z" name="tearDownMethod" finished-at="2022-02-24T19:20:28Z" duration-ms="131" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=deletionOfURL status=SUCCESS method=WordPressMyProfile.deletionOfURL()[pri:4, instance:test.wordpress.testcases.WordPressMyProfile@d86a6f] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDownMethod -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:test.wordpress.testcases.WordPressMyProfile@d86a6f]" started-at="2022-02-24T19:20:28Z" name="tearDown" finished-at="2022-02-24T19:20:28Z" duration-ms="206" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+      </class> <!-- test.wordpress.testcases.WordPressMyProfile -->
+    </test> <!-- Word Press Test -->
+  </suite> <!-- WordPress Suite -->
+</testng-results>
