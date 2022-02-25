@@ -5,10 +5,11 @@
     <classes>
       <class name="test.wordpress.testcases.WordPressMyProfile">
         <methods>
-          <include name="update_ProfileInfo"/>
           <include name="setupSuite"/>
+          <include name="showGravatarProfile"/>
           <include name="setup"/>
           <include name="tearDownMethod"/>
+          <include name="loginApplication"/>
           <include name="tearDown"/>
         </methods>
       </class> <!-- test.wordpress.testcases.WordPressMyProfile -->

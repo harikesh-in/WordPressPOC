@@ -1,6 +1,7 @@
 package test.wordpress.pages;
 
 import java.util.List;
+import java.util.Set;
 import java.util.concurrent.TimeUnit;
 
 import org.openqa.selenium.By;
@@ -34,6 +35,7 @@ public class MyProfilePage {
 	@FindBy(xpath="*//button[text()='Cancel']") WebElement Cancelbtn;
 	@FindBy(xpath="*//button[text()='Create Site']") WebElement createSiteBtn;
 	@FindBy(xpath="*//li[@class='profile-link']") List<WebElement> linkList;
+	@FindBy(xpath="*//span[contains(@class,'components-form-toggle')]") WebElement gravatar;
 
 	public boolean verifyTitle(String Title) {
 		String name = ProfileTitle.getText();
@@ -107,19 +109,44 @@ public class MyProfilePage {
 	}
 
 	public void clickCancel() {
-		Cancelbtn.click();
+		try {
+			Thread.sleep(2000);
+			Cancelbtn.click();
+			Thread.sleep(5000);
+		} catch (InterruptedException e) {
+			e.printStackTrace();
+		}
 	}
 
 	public void addWordPressSite() {
 		addBtn.click();
 		driver.manage().timeouts().implicitlyWait(5, TimeUnit.SECONDS);
 		addSite.click();
-		driver.manage().timeouts().implicitlyWait(5, TimeUnit.SECONDS);
+		try {
+			Thread.sleep(5000);
+		} catch (InterruptedException e) {
+			e.printStackTrace();
+		}
 	}
 
 	public void gotoWordPressSite() {
+		String parent = driver.getWindowHandle();
 		createSiteBtn.click();
-		driver.manage().timeouts().implicitlyWait(5, TimeUnit.SECONDS);
+		try {
+			Thread.sleep(5000);
+		} catch (InterruptedException e) {
+			e.printStackTrace();
+		}
+		Set<String> windowList = driver.getWindowHandles();
+		for (String win : windowList) {
+			if (!win.equals(parent)) {
+				driver.switchTo().window(win);
+			}
+		}
+	}
+
+	public void closeChildBrowser() {
+		driver.close();
 	}
 
 	public int getSiteCount() {
@@ -137,4 +164,23 @@ public class MyProfilePage {
 			}
 		}
 	}
+
+	public void toggleGravatar() {
+		inspector.click();
+		try {
+			Thread.sleep(5000);
+		} catch (InterruptedException e) {
+			e.printStackTrace();
+		}
+	}
+
+	public boolean gravatarStatus() {
+		boolean status = false;
+		String data = gravatar.getAttribute("class");
+		if (!data.contains("checked")) {
+			status = true;
+		}
+		return status;
+	}
+
 }
